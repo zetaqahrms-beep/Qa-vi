@@ -37,8 +37,8 @@ At a full-screen width (about 1920px) the full word is visible.
 EXPECTED RESULT
 The full label is visible inside the page at 1280 x 650.
 
-## C1 (Low): FOLD INTO the home-form ticket below (same fix as ZNW-25)
-Summary: Phone number with letters shows the empty-field messages on the home contact form
+## C1 (Low): STANDALONE, affects BOTH forms (home + /zetacontact). Link ZNW-25 (Closed) with "relates to"; do not touch it.
+Summary: Phone number with letters shows the empty-field message on the home page and Contact page forms
 
 STEPS TO REPRODUCE
 1. Open https://zetahrms-saas.com:8085/ERPSaasUI/home and scroll to the contact form
@@ -51,6 +51,8 @@ The form is not submitted. Under Phone Number the message reads
 "Please enter your phone number." and above Send it reads
 "Please complete the required fields." The Phone Number field shows "gfdfg",
 and every required field is filled.
+The Contact page form (/zetacontact) accepts the same letters and shows the same
+"Please enter your phone number." message.
 For comparison, typing test@ in Company Email shows "Please enter a valid email address."
 
 EXPECTED RESULT
@@ -61,7 +63,7 @@ The message states that the phone number entered is not valid.
 Before raising: open /zetacontact and confirm each behaviour there once (fixed state).
 Check C5 with the DevTools Accessibility tab and list the exact fields with an empty Name.
 
-Summary: The home page contact form does not have the fixes made to the Contact page form
+Summary: The home page contact form tabs do not expose the selected state that the Contact page form tabs do
 
 STEPS TO REPRODUCE
 1. Open https://zetahrms-saas.com:8085/ERPSaasUI/zetacontact and check the behaviours below
@@ -70,9 +72,6 @@ STEPS TO REPRODUCE
 
 ACTUAL RESULT
 On the home page form:
-- Phone Number accepts letters: "gfdfg" stays in the field, and the messages read
-  "Please enter your phone number." and "Please complete the required fields."
-  (Contact page fix: ZNW-25, Closed)
 - The Sales / Partner / General tabs are plain buttons: DevTools Accessibility shows
   "No ARIA attributes", Role: button. The active tab is shown by colour only.
   On /zetacontact the same tabs have role="tab", aria-selected="true"/"false",

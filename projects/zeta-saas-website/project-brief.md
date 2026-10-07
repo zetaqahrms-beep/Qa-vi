@@ -24,6 +24,7 @@
 - **Tech stack:** Angular SPA (`app-root`, `app-sub-page-shell`), utility-class CSS, served by Microsoft-IIS/10.0 on port 8085. Backend at `/ERPSaasUIBackend` — ASP.NET Core (inferred, confirm) — with routes under `/api/` plus a `/health` endpoint outside it.
 - **Test framework:** Playwright (specs, page objects, locators), black-box against the live site. Personal tool run by hand. (confirm)
 - **Code conventions:** TODO: What are the website's own source conventions? Testing is black-box and the application source is not available here.
+- **Enquiry routing (confirmed 2026-10-07):** Sales, Partner and General tabs -> Sales inbox; Help Desk tab -> Support inbox. By design.
 - **APIs & integrations:** `/ERPSaasUIBackend/api/*` returns JSON. The marketing pages make no API calls on load — content ships inside the JavaScript bundles.
 - **Key data entities:** product module (title, path, family); industry (name, path); country (code, name, dialling code); enquiry (name, email, company, dialling code, phone, product, message).
 - **Routing note:** Addresses use path form with no hash. This flipped to hash on 29 Sep 2026 and back to path on 5 Oct 2026 — check before relying on either.
