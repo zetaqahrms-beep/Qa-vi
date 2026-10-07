@@ -61,7 +61,7 @@ The message states that the phone number entered is not valid.
 
 ## HOME-FORM: one ticket for fixes missing on the home page form
 Before raising: open /zetacontact and confirm each behaviour there once (fixed state).
-Check C5 with the DevTools Accessibility tab and list the exact fields with an empty Name.
+C5 dropped 2026-10-07: Country has aria-label "Country"; checkboxes are wrapped in <label> (name from label text).
 
 Summary: The home page contact form tabs do not expose the selected state that the Contact page form tabs do
 
@@ -77,8 +77,6 @@ On the home page form:
   On /zetacontact the same tabs have role="tab", aria-selected="true"/"false",
   aria-controls="contact-tabpanel", inside role="tablist" aria-label="Enquiry type".
   (Contact page fix: ZNW-161, Closed) [verified manually 2026-10-07, screenshots]
-- [Only if confirmed] Fields with an empty accessible name: <list>.
-  (Contact page fix: ZNW-113, Closed)
 Measured at 1280 x 650.
 
 EXPECTED RESULT
