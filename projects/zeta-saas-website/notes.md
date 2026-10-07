@@ -9,7 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
-- Run `prompts/resume-security-and-recheck.md` in Claude Code (SEC-002 frame fix, SEC-001 missing-header names, C3 + C9 drafts, ZNW-165 + ZNW-141 comments).
+- ~~Resume prompt~~ DONE 2026-10-07: SEC-002 fixed (passes, frame blocked), SEC-001 names missing header, C9 raised as ZNW-177 (guard SEC-012), C3 dropped (name comes from img alt — measurement error). ZNW-165/141 comments approved; ZNW-177 comment pending exact request body.
 - Ask developer whether /pricing -> /zetacontact redirect is intended (C7).
 - Browser extension retest: home page Part C (forms) and Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
 
