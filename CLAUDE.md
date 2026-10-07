@@ -7,7 +7,7 @@ This repo is a prompt engineering workspace for several projects. All project da
 | Tag | Folder | What it is |
 |---|---|---|
 | `[SaaS]` | `projects/zeta-saas-website/` | Zeta SaaS marketing website (Angular); black-box QA with Playwright + AI bug hunts, Jira ZNW |
-| `[HRMS]` | `projects/zeta-hrms-mobile/` | Zeta HRMS mobile app (Flutter) |
+| `[HRMS]` | `projects/zeta-hrms-mobile/` | ZetaMobile: Appium + WebdriverIO test framework for the ESS Android app (Flutter), Jira MAB |
 | `[Finance]` | `projects/finance-ai/` | Finance AI: independent study, website + mobile app |
 
 ## How to work in this repo
