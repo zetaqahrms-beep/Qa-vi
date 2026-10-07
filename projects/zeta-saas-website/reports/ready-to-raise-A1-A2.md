@@ -73,8 +73,11 @@ On the home page form:
 - Phone Number accepts letters: "gfdfg" stays in the field, and the messages read
   "Please enter your phone number." and "Please complete the required fields."
   (Contact page fix: ZNW-25, Closed)
-- The Sales / Partner / General tabs carry no aria-selected or aria-pressed; the active
-  tab is shown by outline and colour only. (Contact page fix: ZNW-161, Closed)
+- The Sales / Partner / General tabs are plain buttons: DevTools Accessibility shows
+  "No ARIA attributes", Role: button. The active tab is shown by colour only.
+  On /zetacontact the same tabs have role="tab", aria-selected="true"/"false",
+  aria-controls="contact-tabpanel", inside role="tablist" aria-label="Enquiry type".
+  (Contact page fix: ZNW-161, Closed) [verified manually 2026-10-07, screenshots]
 - [Only if confirmed] Fields with an empty accessible name: <list>.
   (Contact page fix: ZNW-113, Closed)
 Measured at 1280 x 650.
