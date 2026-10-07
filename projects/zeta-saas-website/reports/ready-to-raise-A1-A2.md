@@ -103,3 +103,4 @@ EXPECTED RESULT
 The "Security" link is fully visible and can be clicked at 1291 x 775.
 
 (Do not add a fix. Attach a screenshot showing the overlap.)
+Related: ZNW-115 (Suggestion, Deferred) "Make the AI Chatbot Icon Moveable". Link it with Jira's "relates to" issue link; do not comment on it.
