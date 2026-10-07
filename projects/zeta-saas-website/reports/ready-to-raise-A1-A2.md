@@ -36,3 +36,22 @@ At a full-screen width (about 1920px) the full word is visible.
 
 EXPECTED RESULT
 The full label is visible inside the page at 1280 x 650.
+
+## C1 (Low)
+Summary: Phone number with letters shows the empty-field messages on the home contact form
+
+STEPS TO REPRODUCE
+1. Open https://zetahrms-saas.com:8085/ERPSaasUI/home and scroll to the contact form
+2. Fill Name, Company Name, Company Email and the message field
+3. Type gfdfg in Phone Number
+4. Press Send
+
+ACTUAL RESULT
+The form is not submitted. Under Phone Number the message reads
+"Please enter your phone number." and above Send it reads
+"Please complete the required fields." The Phone Number field shows "gfdfg",
+and every required field is filled.
+For comparison, typing test@ in Company Email shows "Please enter a valid email address."
+
+EXPECTED RESULT
+The message states that the phone number entered is not valid.
