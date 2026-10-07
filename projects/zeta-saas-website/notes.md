@@ -9,6 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
+- Home contact form vs /zetacontact: user found the home form lacks fixes already made to the Contact page form. Plan: compare both forms, raise ONE ticket listing differences with original ZNW keys (C3, C4, C5, maybe C1 fold in). Do not touch Closed tickets. Prompt in chat 2026-10-07.
 - Manual verification 2026-10-07: A1 'Manufacture' REPRODUCED (Chrome, full screen). A2 'Construction' cut off REPRODUCED at 1280x650 (shows 'Constructi'); not visible at full screen ~1920. C1 manual check: letters in phone ('gfdfg') are blocked, but messages read 'Please enter your phone number.' and 'Please complete the required fields.' with all fields filled — decided: raise as Low (wording); draft in reports/ready-to-raise-A1-A2.md. Ready to raise after the limit resets (Fri 9 Oct): drafts in reports/ready-to-raise-A1-A2.md.
 - FIRST (after weekly limit resets Oct 9, 11:30 AM): run `prompts/resume-jira-edits.md` in Claude Code. ZNW-165/141 edits may or may not have saved; ZNW-177/149/155 need redrafts.
 - ~~Resume prompt~~ DONE 2026-10-07: SEC-002 fixed (passes, frame blocked), SEC-001 names missing header, C9 raised as ZNW-177 (guard SEC-012), C3 dropped (name comes from img alt — measurement error). ZNW-165/141 comments approved; ZNW-177 comment pending exact request body.
