@@ -126,7 +126,3 @@ word "under". (Screenshot attached.)
 
 EXPECTED RESULT
 The heading and the left page menu do not overlap at 1291 x 775.
-
-(Optional second item to confirm with the tester: the Zenita bubble
-"2,000+ businesses trust Zeta. Want to hear what they automated first?" sits over the
-bottom-right corner of the Solution Finder card.)
