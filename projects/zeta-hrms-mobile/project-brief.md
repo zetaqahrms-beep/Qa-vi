@@ -16,7 +16,7 @@
 - **Most urgent prompt to build first:** project direction review — what is covered, what is missing, what to test next.
 
 ## Voice & style
-- **Tone:** plain English, short sentences, evidence first. Teaching tone: after a technical answer, coaching on English, prompt writing, then JavaScript.
+- **Tone:** plain English, short sentences, evidence first. No lessons (English, prompt and coding coaching happens only in the Qa-vi workspace).
 - **Words / claims to avoid:** "fixed", "passed" or "missing" without evidence; use CANNOT TELL instead. No overstated impact, no invented severity, no verdict about the app from a single tool failure.
 
 ## Technical
