@@ -20,7 +20,7 @@
 - **Words / claims to avoid:** Never name the correct value unless a requirement defines it — name the defect instead. No severity reasoning in ticket bodies. Never write that a ticket was closed early, or that a fault is "still" present.
 
 ## Technical
-- **Platforms:** Web only. Desktop-first; verified at 1291×775, 1440×900 and 1280×650.
+- **Platforms:** Web only. **Desktop only (2026-10-07: mobile/phone resolutions dropped from scope).** Verified at 1291×775, 1440×900 and 1280×650.
 - **Tech stack:** Angular SPA (`app-root`, `app-sub-page-shell`), utility-class CSS, served by Microsoft-IIS/10.0 on port 8085. Backend at `/ERPSaasUIBackend` — ASP.NET Core (inferred, confirm) — with routes under `/api/` plus a `/health` endpoint outside it.
 - **Test framework:** Playwright (specs, page objects, locators), black-box against the live site. Personal tool run by hand. (confirm)
 - **Code conventions:** TODO: What are the website's own source conventions? Testing is black-box and the application source is not available here.

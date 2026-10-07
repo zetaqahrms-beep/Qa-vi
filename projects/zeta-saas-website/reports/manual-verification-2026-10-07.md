@@ -2,12 +2,12 @@
 
 Site: https://zetahrms-saas.com:8085/ERPSaasUI/home
 
-## Setup (do once)
-1. Open Edge, open the home page in a new tab.
-2. Press F12 to open DevTools, then Ctrl + Shift + M (device toolbar).
-3. At the top choose "Responsive" and type 1291 x 775.
-4. Keep the zoom at 100% inside the device toolbar.
-Why: A2 and D1 depend on the window width. Other sizes may not show them.
+## Setup (do once): desktop only
+1. Open Edge on your desktop as normal, with the Claude side panel OPEN.
+   (That is the window size the AI used: 1291 x 775. No phone or device mode needed.)
+2. Open the home page in a new tab.
+Note: A2 and D1 depend on the window width. If you test with the side panel closed (wider
+window) and they do not appear, open the side panel and check again. Record the width you used.
 
 ---
 
@@ -29,7 +29,7 @@ Result: [ ] Reproduced  [ ] Not reproduced
 
 ## A2: "Construction" label is cut off at the right edge
 STEPS TO REPRODUCE
-1. Set the viewport to 1291 x 775 (see Setup).
+1. Use the desktop window from Setup (side panel open).
 2. Open the home page.
 3. Move the mouse over the orange "Industry" circle in the hero.
 4. Look at the "Construction" label at the top right.
@@ -120,7 +120,7 @@ Result: [ ] Reproduced (fields: ________)  [ ] Not reproduced
 
 ## D1: Zenita chat button covers the footer "Security" link
 STEPS TO REPRODUCE
-1. Set the viewport to 1291 x 775 (see Setup).
+1. Use the desktop window from Setup (side panel open).
 2. Open the home page and scroll to the very bottom.
 3. Look at the bottom-right, beside "Privacy Policy".
 4. Click the middle of the word "Security".
