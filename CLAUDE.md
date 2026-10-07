@@ -8,7 +8,7 @@ This repo is a prompt engineering workspace for several projects. All project da
 |---|---|---|
 | `[SaaS]` | `projects/zeta-saas-website/` | Zeta SaaS marketing website (Angular); black-box QA with Playwright + AI bug hunts, Jira ZNW |
 | `[HRMS]` | `projects/zeta-hrms-mobile/` | ZetaMobile: Appium + WebdriverIO test framework for the ESS Android app (Flutter), Jira MAB |
-| `[Finance]` | `projects/finance-ai/` | Finance AI: independent study, website + mobile app |
+| `[Finance]` | `projects/finance-ai/` | FinanceAI: personal finance web app (Node/Express/SQLite, vanilla JS) with in-app Gemini prompts |
 
 ## How to work in this repo
 

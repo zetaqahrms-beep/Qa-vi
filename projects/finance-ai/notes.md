@@ -9,4 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## 2026-10-07
-- Project folder created. Brief needs details (see TODOs in project-brief.md).
+- Brief filled in from intake session.
+- Core design rule: FinanceAI calculates every figure; Gemini only words, explains or proposes. Keep this in every in-app prompt.
+- Prompt priority: 1) typed/voice transaction parser, 2) money questions, 3) Investment Ideas, 4) Insights comment.
+- Project folder created.
