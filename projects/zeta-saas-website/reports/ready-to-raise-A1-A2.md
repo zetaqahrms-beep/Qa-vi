@@ -83,3 +83,23 @@ Measured at 1280 x 650.
 
 EXPECTED RESULT
 The home page form behaves the same as the Contact page form for each item above.
+
+## D1 (manually checked 2026-10-07 at 1291 x 775)
+Summary: The Zenita chat button covers the "Security" link in the home page footer at 1291 x 775
+
+STEPS TO REPRODUCE
+1. Set the browser viewport to 1291 x 775
+2. Open https://zetahrms-saas.com:8085/ERPSaasUI/home
+3. Scroll to the end of the page until the footer is shown
+4. Look at the bottom-right links, beside "Privacy Policy"
+5. Click the middle of the word "Security"
+
+ACTUAL RESULT
+The round Zenita chat button sits on top of the "Security" link and covers part of the word.
+Clicking the covered part does not open the Security page; the click goes to the chat button.
+The link opens /trust when reached with the keyboard (Tab, then Enter).
+
+EXPECTED RESULT
+The "Security" link is fully visible and can be clicked at 1291 x 775.
+
+(Do not add a fix. Attach a screenshot showing the overlap.)
