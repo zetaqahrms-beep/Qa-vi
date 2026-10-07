@@ -37,7 +37,7 @@
 - **Must never:** Sign in anywhere, or type a password. No load testing, scanners, injection payloads or rapid repeated requests — security and performance testing is passive only.
 - **Must never:** Report a missing footer. It is absent by design on every page except home, support, partner and contact.
 - **Must never:** Set a Jira ticket to Fixed — that is the developer's status. Never write to Jira without explicit approval for that specific issue.
-- **Compliance / privacy:** Four demo accounts with plain-text passwords ship in browser storage, and the partner portal renders without sign-in. Both were ruled acceptable pre-launch demo data while no customers exist. No real personal data is present on the site.
+- **Compliance / privacy:** Four demo accounts with plain-text passwords ship in browser storage, and the partner portal renders without sign-in. Both were ruled acceptable pre-launch demo data while no customers exist. Update 2026-10-07: SEC-004 run found nothing credential-shaped in localStorage (`zeta-accounts` no longer present). No real personal data is present on the site.
 
 ## Open questions
 - Sign-in (2026-10-07): the sign-in page is a dummy, not yet connected. Test now: field validations and mandatory markers only, using made-up values. Later, once connected: valid username shows success, full validation flow.
