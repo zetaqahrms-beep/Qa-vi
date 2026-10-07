@@ -13,7 +13,8 @@ Claude reads this at the start of a chat to pick up where we left off.
 - ~~Resume prompt~~ DONE 2026-10-07: SEC-002 fixed (passes, frame blocked), SEC-001 names missing header, C9 raised as ZNW-177 (guard SEC-012), C3 dropped (name comes from img alt — measurement error). ZNW-165/141 comments approved; ZNW-177 comment pending exact request body.
 - Comments posted 2026-10-07 on ZNW-149 and ZNW-155 (Deferred) break the team rule; move content into descriptions and ask lead whether to delete the comments. ZNW-165/141/177 updates to be description edits, not comments.
 - Ask developer whether /pricing -> /zetacontact redirect is intended (C7).
-- Browser extension retest: home page Part C (forms) and Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
+- Home Part C DONE 2026-10-07: 3 test enquiries sent (Sales 15:39:02, Partner 15:41:57, General 15:43:00) — confirm each reached the right team. Possible bugs: phone 'abc' shows empty-field message; two error reds; tabs lack aria-selected. UX question for lead: success shown only as brief 'Message sent' button label. Check Jira for country default UAE vs India.
+- Browser extension retest: home page Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
 
 ## 2026-10-07
 - External report (UID/DEF) re-checked in Claude Code: C1 deep-link blank = ZNW-165; C2 mobile bubble, C5 favicon, C8 cold start NOT reproduced; C3 one unnamed icon button NEW; C4 skip link = same root as ZNW-141; C6 = ZNW-169; C7 /pricing redirect is configured on purpose (ask dev before raising); C9 verbose parser error NEW (was SEC-005). Lesson: external reports carried severity, fixes and cause guesses; 3 of 9 findings were false.
