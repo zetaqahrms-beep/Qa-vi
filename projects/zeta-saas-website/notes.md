@@ -14,7 +14,8 @@ Claude reads this at the start of a chat to pick up where we left off.
 - Comments posted 2026-10-07 on ZNW-149 and ZNW-155 (Deferred) break the team rule; move content into descriptions and ask lead whether to delete the comments. ZNW-165/141/177 updates to be description edits, not comments.
 - Ask developer whether /pricing -> /zetacontact redirect is intended (C7).
 - Home Part C DONE 2026-10-07: 3 test enquiries sent (Sales 15:39:02, Partner 15:41:57, General 15:43:00) — confirm each reached the right team. Possible bugs: phone 'abc' shows empty-field message; two error reds; tabs lack aria-selected. UX question for lead: success shown only as brief 'Message sent' button label. Check Jira for country default UAE vs India.
-- Browser extension retest: home page Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
+- Home Part D DONE: report saved in reports/home-page-retest-2026-10-07.md. 4th enquiry sent 16:00:40 (Sales). New: D1 Zenita launcher covers footer 'Security' link; C5 labels not linked (verify with accessible-name lookup). Questions for lead: C2 success message, D2 Mauritius grouping. Manual check: are testimonial quote cards ever visible (opacity 0)? Next: run prompts/raise-home-retest-findings.md in Claude Code.
+- Browser extension retest (old line): home page Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
 
 ## 2026-10-07
 - External report (UID/DEF) re-checked in Claude Code: C1 deep-link blank = ZNW-165; C2 mobile bubble, C5 favicon, C8 cold start NOT reproduced; C3 one unnamed icon button NEW; C4 skip link = same root as ZNW-141; C6 = ZNW-169; C7 /pricing redirect is configured on purpose (ask dev before raising); C9 verbose parser error NEW (was SEC-005). Lesson: external reports carried severity, fixes and cause guesses; 3 of 9 findings were false.
