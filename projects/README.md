@@ -1,6 +1,16 @@
-# Prompt Library
+# Projects
 
-Prompts for each project, saved here so they survive beyond any single chat.
+Project data and prompts, saved here so they survive beyond any single chat.
+
+## Folder layout
+
+```
+projects/<project>/
+├── project-brief.md   what the project is, users, tone, stack, rules
+├── notes.md           running log of decisions and ideas (newest first)
+├── prompts/           finished prompts, one file each
+└── examples/          sample inputs/outputs used to test prompts
+```
 
 ## Projects
 
@@ -14,8 +24,9 @@ Prompts for each project, saved here so they survive beyond any single chat.
 
 1. Start chat messages with the project tag, e.g. `[HRMS] write a prompt for ...`.
 2. Each folder has a `project-brief.md`. Keep it up to date; every prompt for that project builds on it.
-3. When a prompt is final, save it as its own file in the project folder (e.g. `zeta-hrms-mobile/leave-summary.md`).
-4. In a new chat, point Claude at `prompts/<project>/` to pick up where you left off.
+3. When a prompt is final, save it in the project's `prompts/` folder (e.g. `zeta-hrms-mobile/prompts/leave-summary.md`).
+4. Record decisions and ideas in `notes.md`.
+5. In a new chat, Claude reads `CLAUDE.md` automatically and finds `projects/<project>/` to pick up where you left off.
 
 ## Prompt file template
 
