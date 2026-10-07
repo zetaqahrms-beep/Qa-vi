@@ -9,4 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## 2026-10-07
-- Project folder created. Brief needs details (see TODOs in project-brief.md).
+- Brief filled in from intake session. Work here is black-box QA of the live site (Playwright + browser-extension AI bug hunts + Jira ZNW).
+- Prompt priority: 1) bug-hunt prompt (`docs/PROMPT-*.md`) to cut measurement errors, 2) Jira bug report writer.
+- Framework stays on the tester's machine for now (personal tool, run by hand).
+- Project folder created.
