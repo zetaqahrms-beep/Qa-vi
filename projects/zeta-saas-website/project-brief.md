@@ -36,6 +36,7 @@
 - **Forms (updated 2026-10-07):** Submitting forms with clearly marked test data is allowed — the receiving teams (sales, general, help desk, partner) know test emails will arrive and use them to confirm routing. Mark every submission "QA TEST – please ignore", submit each enquiry type once per test run, and record the submit time so emails can be matched.
 - **Must never:** Sign in anywhere, or type a password. No load testing, scanners, injection payloads or rapid repeated requests — security and performance testing is passive only.
 - **Must never:** Report a missing footer. It is absent by design on every page except home, support, partner and contact.
+- **Must never:** Comment on Closed Jira bugs. Comments go on Reopened bugs (TODO: confirm whether New/Deferred bugs may get comments).
 - **Must never:** Set a Jira ticket to Fixed — that is the developer's status. Never write to Jira without explicit approval for that specific issue.
 - **Compliance / privacy:** Four demo accounts with plain-text passwords ship in browser storage, and the partner portal renders without sign-in. Both were ruled acceptable pre-launch demo data while no customers exist. Update 2026-10-07: SEC-004 run found nothing credential-shaped in localStorage (`zeta-accounts` no longer present). No real personal data is present on the site.
 
