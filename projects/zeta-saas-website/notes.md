@@ -8,6 +8,11 @@ Claude reads this at the start of a chat to pick up where we left off.
 - Decision / idea / open question
 -->
 
+## Pending for Monday 2026-10-12
+- Run `prompts/resume-security-and-recheck.md` in Claude Code (SEC-002 frame fix, SEC-001 missing-header names, C3 + C9 drafts, ZNW-165 + ZNW-141 comments).
+- Ask developer whether /pricing -> /zetacontact redirect is intended (C7).
+- Browser extension retest: home page Part C (forms) and Part D (layout, footer, testimonial '·' spacing, 24 footer links), then runs 2-7.
+
 ## 2026-10-07
 - External report (UID/DEF) re-checked in Claude Code: C1 deep-link blank = ZNW-165; C2 mobile bubble, C5 favicon, C8 cold start NOT reproduced; C3 one unnamed icon button NEW; C4 skip link = same root as ZNW-141; C6 = ZNW-169; C7 /pricing redirect is configured on purpose (ask dev before raising); C9 verbose parser error NEW (was SEC-005). Lesson: external reports carried severity, fixes and cause guesses; 3 of 9 findings were false.
 - Security test messages trimmed to observed facts only (commit d0eb821). SEC-002 framing test found to be a false positive (onload fires on blocked frames too); fix via Playwright frame API (frame URL chrome-error:// vs heading visible). Lesson: a test can be confidently wrong — when a test fails but its own output contradicts the failure, suspect the detection method.
