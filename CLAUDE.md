@@ -17,3 +17,9 @@ This repo is a prompt engineering workspace for several projects. All project da
 - When writing a prompt, explain the reasoning behind each part (role, context, input tags, rules, output format, examples).
 - When the user says "save it", write the prompt to `projects/<project>/prompts/<name>.md` using the template in `projects/README.md`, add a line to that project's `notes.md`, then commit and push.
 - Keep `project-brief.md` updated when the user shares new project details.
+
+## Who this is for
+
+- The user is the only reader of the output. This workspace is for planning prompts and tracking where each project is heading.
+- The user does prompt engineering from a separate Claude account; the actual projects are worked on elsewhere.
+- Default response format: a short chat summary first, then details only if needed.
