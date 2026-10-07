@@ -75,8 +75,6 @@ On the home page form:
   (Contact page fix: ZNW-25, Closed)
 - The Sales / Partner / General tabs carry no aria-selected or aria-pressed; the active
   tab is shown by outline and colour only. (Contact page fix: ZNW-161, Closed)
-- Validation messages use two reds: rgb(220, 38, 38) and rgb(185, 28, 28).
-  (Related Contact page fix: ZNW-100, Closed)
 - [Only if confirmed] Fields with an empty accessible name: <list>.
   (Contact page fix: ZNW-113, Closed)
 Measured at 1280 x 650.
