@@ -9,6 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## 2026-10-07
+- Rule change: form submissions with marked test data now allowed (teams agreed to receive test emails). Sign-in still not allowed until confirmed. Full-site retest moved to the browser extension (Claude Code session limit).
 - Security work done: guard tests SEC-010 (ZNW-175) and SEC-011 (ZNW-176) in tests/site/security.spec.js, commit 75f32e5 (local). Framework convention for open bugs: assert correct behaviour, ZNW key in failure message, test fails until fixed (no test.fail, no skip). ZNW-149 and ZNW-155 comments posted. SEC-005 untested.
 - Raised ZNW-175 (Swagger public, SEC-002) and ZNW-176 (backend Server/X-Powered-By, SEC-004). SEC-003 added as comment on ZNW-149. SEC-006: comment on ZNW-155 with path-form measurements; /products/invented-thing blank render = ZNW-165. Guard tests planned in tests/site/security.spec.js.
 - Lesson: every AI draft round added small overclaims ("every response", "unchanged", unobserved "Try it out"). Add an UNMEASURED rule to the bug-hunt prompt.
