@@ -40,7 +40,7 @@
 - **Compliance / privacy:** Four demo accounts with plain-text passwords ship in browser storage, and the partner portal renders without sign-in. Both were ruled acceptable pre-launch demo data while no customers exist. No real personal data is present on the site.
 
 ## Open questions
-- TODO: Does this brief cover the public marketing site only, or also the customer and partner portals under `/login/`?
+- Sign-in (2026-10-07): the sign-in page is a dummy, not yet connected. Test now: field validations and mandatory markers only, using made-up values. Later, once connected: valid username shows success, full validation flow.
 - TODO: What is the application's own source stack and repository? The test framework is black-box and has no access to it.
 - TODO: Is `zetahrms-saas.com:8085` the production host, or a test server configured differently? Several findings — compression, app-pool idle timeout — depend entirely on the answer.
 - TODO: Which company name is correct, "Zeta Software" or "Zeta Softwares"? Both appear on the site today.
