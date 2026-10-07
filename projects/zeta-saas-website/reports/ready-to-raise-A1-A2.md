@@ -105,3 +105,28 @@ The "Security" link is fully visible and can be clicked at 1291 x 775.
 
 (Do not add a fix. Attach a screenshot showing the overlap.)
 Related: ZNW-115 (Suggestion, Deferred) "Make the AI Chatbot Icon Moveable". Link it with Jira's "relates to" issue link; do not comment on it.
+
+## E1 (manually found 2026-10-07 at 1291 x 775): Solution Finder heading overlaps the left page menu
+Related (do not touch, Closed): ZNW-94 "Answering the Solution Finder slides the section 97px
+left and the page menu prints on top of the heading" -> link with "relates to".
+Difference: E1 happens on arrival, before any answer is chosen.
+
+Summary: The Solution Finder heading overlaps the left page menu on the home page at 1291 x 775
+
+STEPS TO REPRODUCE
+1. Set the browser viewport to 1291 x 775
+2. Open https://zetahrms-saas.com:8085/ERPSaasUI/home
+3. In the left page menu, click "Solution Finder" (or scroll to that section)
+4. Do not choose any answer. Look at the left page menu beside the heading
+
+ACTUAL RESULT
+The heading "Find your fit in under two minutes" sits on top of the left page menu.
+The menu item "Solution Finder" shows as "Solution Fin" and the rest is covered by the
+word "under". (Screenshot attached.)
+
+EXPECTED RESULT
+The heading and the left page menu do not overlap at 1291 x 775.
+
+(Optional second item to confirm with the tester: the Zenita bubble
+"2,000+ businesses trust Zeta. Want to hear what they automated first?" sits over the
+bottom-right corner of the Solution Finder card.)
