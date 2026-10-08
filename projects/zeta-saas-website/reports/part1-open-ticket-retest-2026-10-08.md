@@ -21,10 +21,10 @@
 | 6 | ZNW-178 | REPRODUCES |
 | 7 | ZNW-179 | REPRODUCES |
 | 8 | ZNW-184 | REPRODUCES |
-| 9 | ZNW-180 | REPRODUCES |
+| 9 | ZNW-180 | DOES NOT REPRODUCE |
 | 10 | ZNW-166 | DOES NOT REPRODUCE |
 | 11 | ZNW-172 | DOES NOT REPRODUCE |
-| 12 | ZNW-182 | REPRODUCES |
+| 12 | ZNW-182 | NOT APPLICABLE |
 | 13 | NEW-A2 | CANNOT TELL at 1280 × 650 — see entry |
 | 14 | NEW-D1 | REPRODUCES |
 | 15 | NEW-E1 | REPRODUCES |
@@ -120,11 +120,15 @@ One screenshot covers all three tickets.
 
 ---
 
-## 9. ZNW-180 — REPRODUCES
+## 9. ZNW-180 — DOES NOT REPRODUCE
 
 **Where:** `/ERPSaasUI/home`, Zenita speech bubble beside the orb at bottom right.
 
-**What is shown:** three different bubble texts appeared across one visit, each confirmed on screen. Quoted exactly:
+**Ticket text:** `Click on me to know more!`
+
+**I did not see that text at any point.** Verdict: DOES NOT REPRODUCE.
+
+**What I did see:** three different bubble texts across one visit, each confirmed on screen. Quoted exactly:
 
 1. At the top of the page, on load:
    > `Welcome to Zeta! One platform for your whole business. Ask me anything. 👋`
@@ -192,18 +196,19 @@ The reason the ticket's situation never arises is that **clicking a category car
 
 ---
 
-## 12. ZNW-182 — REPRODUCES
+## 12. ZNW-182 — NOT APPLICABLE
 
-**Ticket asks:** Send button label — home form vs Contact page form.
+**Ticket compares:** the **home contact form** `Send` button against the Contact page.
 
-**What is shown:** the two labels differ.
+**The home contact form no longer exists.** Scrolled `/ERPSaasUI/home` from scrollTop 0 to the footer at 5287 (scrollHeight 5960), the count of visible `input` and `textarea` elements was **0** at every position. The home contact section now offers two buttons only:
 
-| Form | Button label |
-|---|---|
-| Home — "Book a Free Consultation" popup (the only form reachable from the home page) | `Confirm my consultation` |
-| Contact page `/ERPSaasUI/zetacontact`, **Sales** tab | `Send enquiry` |
+> `Contact Us →`   and   `Email Sales`
 
-Both confirmed on screen. The Contact page carries four tabs: `Sales`, `Partner`, `General`, `Help Desk`.
+`Contact Us` is an `<a href="/ERPSaasUI/zetacontact">` and navigates away.
+
+The element in the ticket is gone, so there is nothing to compare. Verdict: **NOT APPLICABLE**. I have not substituted any other form.
+
+For the record only, not as a substitute comparison: the Contact page Sales tab button reads `Send enquiry`, and the Contact page carries four tabs — `Sales`, `Partner`, `General`, `Help Desk`.
 
 ---
 
@@ -265,7 +270,7 @@ Not tickets, not counted above. Listed so they are not lost.
 
 1. **Free Consultation popup does not open from the keyboard.** With the header `Free Consultation` button focused, Enter did nothing — no dialog, 0 visible inputs, page unchanged. A single mouse click at (1176, 68) opened it immediately. Both results as required by the rule.
 
-2. **Products page jump controls are inert.** All three `Jump to section ↓` controls (`span.phero-jump` inside a `<button>` card) moved the page 0 px, by keyboard and by mouse, measured after settle. Section anchors `#group-enterprise` (abs top 583) and `#group-industry` (abs top 2401) exist in the page; I found no id matching the **Business Suite** card.
+2. **Products page jump controls are inert.** All three `Jump to section ↓` controls (`span.phero-jump` inside a `<button>` card) moved the page 0 px, by keyboard and by mouse, measured after settle. Section anchors `#group-enterprise` (abs top 583), `#group-suite` (abs top 1052) and `#group-industry` (abs top 2401) all exist in the page. **Correction:** my first pass said the Business Suite card had no matching id — that was my search pattern, not the page. All three ids are present.
 
 3. **Country default differs between the header and the popup.** The header chooser shows `India`. The Free Consultation popup opens with Country `UAE` and the phone prefix `+971`.
 
