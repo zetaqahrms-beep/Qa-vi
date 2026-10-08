@@ -3,6 +3,7 @@
 ## Overview
 - **What it is:** The public marketing website for Zeta Software Pvt Ltd's ERP and HRMS products — an Angular single-page app served under `/ERPSaasUI`.
 - **Problem it solves:** Presents 21 product modules, 8 industries and 2 consulting services to prospective buyers, and collects sales, partner, support and consultation enquiries.
+- **Go-live (as of 2026-10-08):** planned for Friday 9 Oct 2026. Developers are fixing visual UI bugs only before launch; security, routing, accessibility and validation bugs stay open.
 - **Current status:** In development, deployed at `https://zetahrms-saas.com:8085/ERPSaasUI`. Pre-launch — no real customers use it yet. 145 defects raised in Jira project ZNW to date, guarded by 634 automated tests.
 
 ## Users
