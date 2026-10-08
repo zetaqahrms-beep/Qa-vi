@@ -9,6 +9,12 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
+- Extra coverage run 2026-10-08 (13 possible). !! F2 India figures likely FALSE: settled India page shows 20+/2000+ like home (656+/7+ was count-up mid-animation) -> recheck after waiting 10s before raising F2.
+  RAISE (after manual check): Kenya heading "SHIF" vs chips "NHIF"; Qatar ribbon chips clipped "AR"/"TATUTORY" (check other Gulf pages); Partner sign-in two eye icons in password (check Edge vs Chrome); Zenita names product lines "Enterprise Solutions"/"SaaS" vs Products page "Enterprise"/"Business Suite" (Low).
+  COMMENT (Reopened): ZNW-116 add Zenita office answer; ZNW-156 add Q3 pricing->product, Q5 "talk to sales"->Sales & Distribution.
+  EDIT (New): ZNW-173 maybe add login pages bare "+" dialling option.
+  MANUAL: /login/customer all fields valid + email "test@" -> submits?
+  DROP: login tab titles (ZNW-163 Rejected), combined message, label for, identical country figures (global by design), Enrollment/Enrolment; ASK lead: Egypt EN only vs Gulf EN·AR.
 - Decisions 2026-10-08 (lead): home contact form removed BY DESIGN (box redirects to Contact page); /pricing -> contact BY DESIGN (sales to discuss); popup UAE default NOT a bug; Products alignment DROPPED. Contact page Sales form manually checked OK.
 - FRIDAY 9 Oct plan: (1) morning re-check ZNW-165 + ZNW-175, send QA WhatsApp message if asked; (2) raise in Jira: A2, D1 (+Partner, link ZNW-115), E1 (link ZNW-94), C1 (Contact page, Low, link ZNW-25), F1, F2, F3, F4 + edit ZNW-77 (16 vs 15); (3) after 11:30 run prompts/resume-jira-edits.md, then guard tests.
 - Manual results 2026-10-08: CONFIRMED F1 FAQ chips->home (NEW), F2 India page figures (NEW; country count = ZNW-75/77 Deferred -> description edit), F3 What we Offer menu stays open on Escape AND on Tab away (NEW), F4 Bahrain hidden (decided Low, NEW). Privacy date = ZNW-48 (Deferred, already reported). DROPPED by tester: module boxes, MEA MEA (real job title data), name ellipsis (by design), "Tap" wording. Drafts in reports/ready-to-raise-A1-A2.md.
