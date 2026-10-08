@@ -9,6 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
+- PART 1 retest 2026-10-08 (report in reports/): visual tickets mostly REPRODUCE (169,171,181,183,185,178/179/184, D1, E1; A2 cut off also at 1291). Home page contact FORM appears REMOVED (now "Contact Us" + "Email Sales" buttons) -> confirm manually; if so ZNW-166 and ZNW-182 not applicable, home-form C3 ticket obsolete, C1 = Contact page only. Verdict corrections: ZNW-180 text "Click on me to know more!" not seen (3 new texts) -> does not reproduce; ZNW-182 AI substituted popup -> not applicable. Possible new: Products "Jump to section" inert; Free Consultation not opening by keyboard; Zenita bubble over KLM logo; popup country default UAE vs India. Manual-check these before raising.
 - FRIDAY 9 Oct go-live discussion: if asked "is testing approved?", send this (WhatsApp):
   "From QA: security, routing, accessibility, form validation and content issues are still open, so we can't approve the launch. If business is okay with these risks, you can go ahead. We'll track them after release."
   Before sending: re-check ZNW-165 (open /ERPSaasUI/country/ae directly -> blank?) and ZNW-175 (/ERPSaasUIBackend/swagger/index.html opens?) on Friday morning.
