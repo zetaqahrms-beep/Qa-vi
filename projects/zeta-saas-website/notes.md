@@ -9,6 +9,9 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
+- FRIDAY 9 Oct go-live discussion: if asked "is testing approved?", send this (WhatsApp):
+  "From QA: security, routing, accessibility, form validation and content issues are still open, so we can't approve the launch. If business is okay with these risks, you can go ahead. We'll track them after release."
+  Before sending: re-check ZNW-165 (open /ERPSaasUI/country/ae directly -> blank?) and ZNW-175 (/ERPSaasUIBackend/swagger/index.html opens?) on Friday morning.
 - C5 DROPPED (manual DevTools 2026-10-07): Country select Name "Country" (aria-label); checkboxes wrapped in <label> so they take the label text as name. Home form ticket = C3 only (ZNW-161).
 - Manual results 2026-10-07: testimonials visible (no bug). Contact page phone ALSO accepts letters (ZNW-25 fix not as expected) -> C1 may not be a home-only gap; check Contact page message. Emails: Sales inbox got all 4 (incl. Partner + General tab enquiries) -> ask lead if Partner/General should route elsewhere. Help Desk (Contact page) delivery verified manually.
 - Jira CSV check (2026-10-07): A1 = DUPLICATE ZNW-178 (do not raise). A2 NEW. D1 NEW (ZNW-122 is a different overlap, Closed). Home form ticket: C1->ZNW-25, C3->ZNW-161, C4 dropped (tester: field vs form-level messages styled differently by design), C5->ZNW-113 (all Closed on Contact page). Related New: ZNW-166, ZNW-182. Drafts in reports/ready-to-raise-A1-A2.md.
