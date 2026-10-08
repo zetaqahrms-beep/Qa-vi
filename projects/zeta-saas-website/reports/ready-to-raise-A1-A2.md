@@ -123,3 +123,72 @@ word "under". (Screenshot attached.)
 
 EXPECTED RESULT
 The heading and the left page menu do not overlap at 1291 x 775.
+
+---
+# Pre-launch retest 2026-10-08: confirmed by tester
+
+## F1: FAQ category chips open the home page (NEW)
+Summary: The category links on the FAQ page open the home page instead of the matching FAQ section
+
+STEPS TO REPRODUCE
+1. Open https://zetahrms-saas.com:8085/ERPSaasUI/faq
+2. Click the category link "Partners" near the top of the page
+3. Repeat with "Products", "Deployment" and "Security & compliance"
+
+ACTUAL RESULT
+Each click opens the home page (/ERPSaasUI/home). The FAQ page has a section for each
+category (Products, Pricing & licensing, Deployment, Implementation & onboarding, Support,
+Security & compliance, Partners), but the links do not move to them.
+
+EXPECTED RESULT
+Each category link moves to its section on the FAQ page.
+
+## F2: India country page figures differ from the home page (NEW; country count part is ZNW-75/77)
+Summary: The India country page shows different company figures from the home page
+Note: the country-count mismatch (banner "16 countries" vs 15 in the chooser) belongs to
+ZNW-77 / ZNW-75 (Deferred): add it there as a DESCRIPTION EDIT, not a new ticket.
+
+STEPS TO REPRODUCE
+1. Open https://zetahrms-saas.com:8085/ERPSaasUI/home and read the four counters below the hero
+2. Open https://zetahrms-saas.com:8085/ERPSaasUI/country/in and read its counters
+
+ACTUAL RESULT
+Home page: "2,000+ Companies", "20+ Countries", "25+ Years", "200,000+ Users".
+India page: "1998 Established", "7+ Countries served", "656+ Customers worldwide",
+"3K+ Core users", "66K+ ESS users".
+The India page labels its figures as worldwide ("Customers worldwide").
+
+EXPECTED RESULT
+The same facts show the same figures on both pages.
+
+## F3: "What we Offer" menu stays open on Escape and when focus moves away (NEW)
+Summary: The "What we Offer" menu does not close with Escape or when the keyboard focus leaves it
+
+STEPS TO REPRODUCE
+1. Open https://zetahrms-saas.com:8085/ERPSaasUI/home
+2. Press Tab until "What we Offer" is focused, then press Enter (the menu opens)
+3. Press Escape
+4. Reopen the menu, then press Tab until the focus moves past the menu items
+
+ACTUAL RESULT
+After step 3 the menu stays open. After step 4 the menu stays open while the focus is on
+the next header item. Pressing Enter on "What we Offer" again closes it.
+
+EXPECTED RESULT
+The menu closes when Escape is pressed and when the focus leaves the menu.
+Related (Closed, do not touch): ZNW-99, ZNW-91.
+
+## F4: Bahrain is hidden in the country chooser until the list is scrolled (Low, NEW)
+Summary: The country chooser shows 14 of 15 countries on open; Bahrain is reached only by scrolling inside the list
+
+STEPS TO REPRODUCE
+1. Open https://zetahrms-saas.com:8085/ERPSaasUI/home at 1291 x 775
+2. Click "India" in the top bar to open the country chooser
+3. Look at the MIDDLE EAST column
+
+ACTUAL RESULT
+The column ends at "Oman". "Bahrain" is not visible and there is no sign that the list
+scrolls. Scrolling inside the list shows "Bahrain", and the group headings scroll out of view.
+
+EXPECTED RESULT
+All 15 countries are visible when the chooser opens, or the list shows that it can be scrolled.
