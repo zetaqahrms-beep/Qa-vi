@@ -42,7 +42,7 @@
 - **Must never:** Report a missing footer. It is absent by design on every page except home, support, partner and contact.
 - **Jira edit/comment rule:** New and Deferred tickets are edited (description/steps/actual result), never commented on. Comments are only for Reopened tickets: when a 'fixed' bug is not fixed, comment then reopen; missing details on a reopened bug also go in a comment. Never touch Closed tickets.
 - **Ticket ownership (lead, 2026-10-09):** tickets ZNW-178..200 (raised by the lead while studying Claude AI testing) are handled as QA's own. QA may edit, change status (e.g. Reject with evidence) and must retest after developers fix. Every Jira write still needs the tester's approval per item.
-- **Must never:** Set a Jira ticket to Fixed — that is the developer's status. Never write to Jira without explicit approval for that specific issue.
+- **Must never:** Set a Jira ticket to Fixed, Reject or Deferred — those are developer statuses (Reject/Deferred confirmed 9 Oct). QA adds a "QA re-check <date>" description edit with evidence instead. Never write to Jira without explicit approval for that specific issue.
 - **Compliance / privacy:** Four demo accounts with plain-text passwords ship in browser storage, and the partner portal renders without sign-in. Both were ruled acceptable pre-launch demo data while no customers exist. Update 2026-10-07: SEC-004 run found nothing credential-shaped in localStorage (`zeta-accounts` no longer present). No real personal data is present on the site.
 
 ## Open questions
