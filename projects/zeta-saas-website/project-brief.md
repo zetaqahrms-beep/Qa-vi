@@ -25,6 +25,7 @@
 - **Tech stack:** Angular SPA (`app-root`, `app-sub-page-shell`), utility-class CSS, served by Microsoft-IIS/10.0 on port 8085. Backend at `/ERPSaasUIBackend` — ASP.NET Core (inferred, confirm) — with routes under `/api/` plus a `/health` endpoint outside it.
 - **Test framework:** Playwright (specs, page objects, locators), black-box against the live site. Personal tool run by hand. (confirm)
 - **Code conventions:** TODO: What are the website's own source conventions? Testing is black-box and the application source is not available here.
+- **Partners (confirmed 2026-10-09):** in countries without a Zeta office, local partners give support; "Local support: Yes" and partner-run locations (e.g. London) count as local presence.
 - **By design (confirmed 2026-10-08):** the home page has no contact form (a box links to the Contact page); /pricing redirects to the Contact page; the Free Consultation popup may default to UAE.
 - **Enquiry routing (confirmed 2026-10-07):** Sales, Partner and General tabs -> Sales inbox; Help Desk tab -> Support inbox. By design.
 - **APIs & integrations:** `/ERPSaasUIBackend/api/*` returns JSON. The marketing pages make no API calls on load — content ships inside the JavaScript bundles.
