@@ -36,9 +36,9 @@ Corrections:
    actually clicked and stayed on the page. Otherwise remove the sentence.
 5. K2: check the page again and say where each spelling appears (hero pill, tile title,
    tile body, hero line, card).
-6. Add a "Related" line to each draft (Jira "relates to" link, no comments):
-   A2 - ZNW-184, C1 - ZNW-25 and ZNW-168, D1 - ZNW-115, E1 - ZNW-94, F3 - ZNW-99,
-   F4 - ZNW-199.
+6. Ticket bodies contain ONLY STEPS TO REPRODUCE / ACTUAL RESULT / EXPECTED RESULT.
+   No NOTE section and no "Related:" line in any body (remove them from every draft,
+   e.g. "Related: ZNW-113 (closed) ..."). Never mention or link Closed tickets.
 7. ZNW-200: add the four UK headings (K4), plus one line saying what the closing headline
    reads today and on which pages.
 8. NO status proposals at all. Reject, Deferred and Fixed are developer statuses. For

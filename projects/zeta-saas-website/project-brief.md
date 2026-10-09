@@ -33,7 +33,7 @@
 - **Routing note:** Addresses use path form with no hash. This flipped to hash on 29 Sep 2026 and back to path on 5 Oct 2026 — check before relying on either.
 
 ## Output formats
-- **Formats needed:** Markdown for prompts and manual-check documents. Plain text for Jira: `STEPS TO REPRODUCE` / `ACTUAL RESULT` / `EXPECTED RESULT`, with no notes sections.
+- **Formats needed:** Markdown for prompts and manual-check documents. Plain text for Jira: `STEPS TO REPRODUCE` / `ACTUAL RESULT` / `EXPECTED RESULT`, with no NOTE sections and no "Related:" lines in the body (tester, 9 Oct). Never mention or link Closed tickets.
 
 ## Rules & constraints
 - **Must always:** Verify a finding on the live site before raising it. Search Jira for a duplicate first — a FRESH search right before raising (the team lead also tests the site with Claude AI and raises tickets, e.g. ZNW-178..200 on 8-9 Oct). Guard every raised bug with an automated test. State where the mouse pointer was for any layout measurement.
