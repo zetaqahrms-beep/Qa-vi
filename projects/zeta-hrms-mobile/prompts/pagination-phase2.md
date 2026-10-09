@@ -45,4 +45,6 @@ STEP 3 – Report (append to docs/pagination-report-2026-10-09.md as "Phase 2", 
 summary verdict per boundary (PASS / FAIL / CANNOT TELL), evidence table, app findings with
 STEPS / ACTUAL / EXPECTED, records created (count, type, marker), and the clean-up status.
 Do not clean up until I approve.
+Commit ONLY docs/pagination-report-2026-10-09.md. Leave every other changed file
+(e.g. docs/prompts/old-app-1.0.19-start.md) uncommitted and untouched.
 ```
