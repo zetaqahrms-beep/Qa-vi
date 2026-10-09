@@ -53,7 +53,9 @@ passed / failed / names of failures with the first error line. Do not change any
 PART 2 - Tickets developers marked Fixed (or Resolved, Done, Ready for QA): search Jira
 project ZNW, read only. Retest each one from its own steps. Most important part.
 
-PART 3 - Our verified findings, not raised yet (measured 9 Oct, 1291x775 unless stated):
+PART 3 - Our verified findings, not raised yet (measured 9 Oct, 1291x775 unless stated).
+The tester confirmed by hand BEFORE the update (9 Oct, 12:22 IST): E1 reproduces at
+1291x775 (fine at a normal screen size); F4 reproduces. Retest both after the update.
 A2 Home hero: sector label "Construction" ends past the right edge (r=1311 in 1291);
    at 1280x650 "Construction" (1306) and "Manufacture" (1281); no horizontal scrollbar.
 D1 Footer "Security" link (/ERPSaasUI/trust) covered by the Zenita launcher
