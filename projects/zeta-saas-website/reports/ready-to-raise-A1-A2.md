@@ -220,7 +220,7 @@ ACTUAL: "WHY ZETA IN UK", "Built for how UK works", "Statutory-ready for UK", "T
 EXPECTED: The wording reads grammatically for the UK, as it does for other countries (e.g. "Built for how Kenya works").
 
 ## Business confirmation list (do not raise yet)
-Lead reply 2026-10-09: no offices in those countries, but local PARTNERS provide support -> "Local support: Yes" and UK "London office" are ACCEPTED (dropped). Compliance names: lead will verify updated versions (pending, do not raise).
+Developer reply 2026-10-09: no offices in those countries, but local PARTNERS provide support -> "Local support: Yes" and UK "London office" are ACCEPTED (dropped). Compliance names: developers will verify updated versions (using Claude) (pending, do not raise).
 - Possibly outdated scheme names: Kenya "NHIF", Oman "PASI", Sri Lanka "PAYE", Mauritius "NPF / NSF".
 - Saudi card "GOSI + WPS" and Malaysia card "SOCSO & EIS": WPS / EIS are not in the statutory lists.
 - "LOCAL SUPPORT: Yes" on 11 countries with no office pin (Qatar, Kuwait, Oman, Bahrain, Sri Lanka, Malaysia, Mauritius, Kenya, Uganda, Egypt, UK).
