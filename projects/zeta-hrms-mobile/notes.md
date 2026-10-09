@@ -9,6 +9,8 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## 2026-10-09
+- Pagination report done (docs/pagination-report-2026-10-09.md, commit bd7fa46 local). Verdict: no defect within available data; multi-page NOT TESTED (max 10 rows, no page size spec). Attendance Regularisation 0 rows + no empty message = CANNOT TELL -> manual check. Not tested: 8 Other Requests entries, search/filter/sort, L2/L3 queues, server-side paging. Ask lead: page size requirement, permission for bulk test data.
+- Mobile Claude still gives English/prompt/JS coaching -> teaching cleanup not yet run in the mobile project.
 - Pagination run (interim): no pagination controls on 11 lists across 2 accounts; integrity clean (0 duplicates, 0 lost, stable order; 4/4 queues match app counts). Empty state: Resumption Request OK; Attendance Regularisation shows no rows and no message (candidate). Not done: 8 Other Requests lists, search/filter. Limitations: no page size spec, no permission to create multi-page data. Report prompt: prompts/pagination-report.md.
 
 ## 2026-10-07
