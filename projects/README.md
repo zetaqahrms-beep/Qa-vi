@@ -37,7 +37,7 @@ Every saved prompt uses this layout:
 
 **Purpose:** what this prompt does
 **Used by:** person / backend code / app feature
-**Model notes:** anything model-specific (optional)
+**Run with:** model + effort (see CLAUDE.md "Model choice"), fresh session yes/no
 
 ## Prompt
 <the prompt itself, with {{variables}} for inputs>

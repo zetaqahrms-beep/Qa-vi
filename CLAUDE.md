@@ -18,6 +18,21 @@ This repo is a prompt engineering workspace for several projects. All project da
 - When the user says "save it", write the prompt to `projects/<project>/prompts/<name>.md` using the template in `projects/README.md`, add a line to that project's `notes.md`, then commit and push.
 - Keep `project-brief.md` updated when the user shares new project details.
 
+## Model choice (every prompt)
+
+The user runs prompts in Claude Code on a Pro plan (limited 5-hour session + weekly usage).
+Every prompt given to the user starts with a **Run with:** line: model + effort + one-line reason,
+and says "fresh session" when a long history is not needed.
+
+| Task type | Model + effort |
+|---|---|
+| Tiny: git status, read/rename a file, quick factual question | Haiku, Low |
+| Routine: re-run/re-measure, smoke test, cleanup, run existing tests, create test data | Sonnet, Medium |
+| Multi-step with judgment: new test code, pagination/boundary runs, debugging a failing test | Sonnet, High |
+| Release-critical judgment: triage verdicts, Jira drafts/status proposals, conflicting evidence, a problem Sonnet could not solve | Opus, High |
+
+Run only one heavy session at a time.
+
 ## Who this is for
 
 - The user is the only reader of the output. This workspace is for planning prompts and tracking where each project is heading.
