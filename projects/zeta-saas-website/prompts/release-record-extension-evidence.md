@@ -1,7 +1,7 @@
 # Release record: add the extension retest evidence (SaaS Claude Code, same session)
 
 **Run with:** Sonnet, High. Same release-record session. Paste AFTER release-record-continue.md (or together with it).
-**Before pasting:** copy `retest-after-update-2026-10-09.md` into the SaaS repo `docs/` and the screenshots folder into `docs/retest-2026-10-09/`.
+**Before pasting:** copy `retest-after-update-2026-10-09.md` and the afternoon `report.md` (save it as `docs/extension-gap-checks-2026-10-09.md`) into the SaaS repo `docs/`, and the screenshots into `docs/retest-2026-10-09/`.
 
 ```
 Extra evidence: a browser-extension retest ran 9 Oct 07:06-08:27 UTC on build main-AJ2WBBZY.
@@ -28,6 +28,18 @@ Use it like this:
    "Zeta Software" only, while other pages use "<page> | Zeta Software". Do a duplicate search
    and draft it as a candidate. I decide with my lead.
 8. Do not commit the extension report or its screenshots, except screenshots you attach.
+9. Afternoon extension gap checks (15:49-16:05 IST, docs/extension-gap-checks-2026-10-09.md):
+   - ZNW-180 confirmed: the Zenita-section bubble reads "Hi, I'm Zenita! Click on me to know
+     more!" - matches your measurement.
+   - K1, letter by letter on the left tiles: Qatar "?AR" (QAR), "??ATUTORY", "?ANGUAGES";
+     Bahrain "??NGUAGES", and the B of "BHD" is partly covered (can read as "3HD"). The other
+     13 country pages read cleanly. Use this in the K1 ACTUAL RESULT.
+   - K4: "Zeta in UK - ERP & HRMS software in UK" is only in the hidden screen-reader nav.
+     Use the 4 visible headings only.
+   - ZNW-165: typed /country/ae also renders (second confirmation).
+10. Jira: the extension could not reach Jira. YOU do the fresh duplicate search (all
+   statuses) for every draft and candidate, and list the tickets developers marked Fixed
+   with a quick retest of each (read only), before the approval list.
 Standing rules still apply: no NOTE section, no "Related:" line, no links, no status proposals.
 STOP before any Jira write.
 ```
