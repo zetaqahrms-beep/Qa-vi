@@ -143,7 +143,7 @@ Security & compliance, Partners), but the links do not move to them.
 EXPECTED RESULT
 Each category link moves to its section on the FAQ page.
 
-## F2: India country page figures differ from the home page (NEW; country count part is ZNW-75/77)
+## F2: DROPPED 2026-10-09 - India figures were read mid count-up; settled values match home (20+ / 2000+). Country count part still goes to ZNW-77 as an edit.
 Summary: The India country page shows different company figures from the home page
 Note: the country-count mismatch (banner "16 countries" vs 15 in the chooser) belongs to
 ZNW-77 / ZNW-75 (Deferred): add it there as a DESCRIPTION EDIT, not a new ticket.
