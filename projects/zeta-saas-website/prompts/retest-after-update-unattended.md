@@ -39,13 +39,21 @@ EVIDENCE RULES:
   one named, the verdict is NOT APPLICABLE.
 - Text clipping: take an element screenshot, open the image and read the letters you SEE.
   Code checks miss left-side clipping.
+- Overlap: document.elementFromPoint at the left edge, centre and right edge, plus a screenshot.
+- Menus: "open" means the panel is visible on screen (size > 0, in the viewport), not just
+  present in the page. Before any keyboard verdict, prove that Tab moves the focus.
+- A verdict needs the right state (right viewport, section scrolled into view, counters
+  settled). If you are not sure the state was right, the verdict is CANNOT TELL.
 
 REPORT: docs/retest-after-update-2026-10-09.md. Write each part into the file as soon as it
 is done (so nothing is lost if the run stops). Screenshots in docs/retest-2026-10-09/.
 At the end, commit ONLY the report file locally: "Retest after update 2026-10-09".
 
-PART 0 - Health (5 min): record the time; home page loads; /ERPSaasUIBackend/health status
-and time; note anything that looks different since 9 Oct morning.
+PART 0 - Health (5 min). FIRST, before anything else touches the backend: ZNW-187 cold
+start - call /ERPSaasUIBackend/health three times and record the time to first byte of each.
+Then: record the time, the build identity if visible (version text, main JS file name/hash),
+git status (read only); home page loads; note anything that looks different since 9 Oct
+morning.
 
 PART 1 - Existing test suite: run the project's Playwright tests as they are. Report
 passed / failed / names of failures with the first error line. Do not change any test.
@@ -83,7 +91,17 @@ its steps and give a verdict. Include ZNW-178..200 (ZNW-191: include the Solutio
 quiz buttons; start the quiz first). Also: ZNW-165 (type /ERPSaasUI/country/ae directly:
 blank?), ZNW-175 (/ERPSaasUIBackend/swagger/index.html reachable?), ZNW-176 (backend
 Server / X-Powered-By headers), ZNW-77 (top banner country number vs countries in the
-chooser vs "20+ countries" text; count the chooser on screen).
+chooser vs "20+ countries" text; count the chooser on screen), ZNW-189 (unknown path:
+HTTP status and what renders), ZNW-190 (any /favicon.ico request or console error on /home),
+ZNW-196 (WhatsApp icons on country pages: WhatsApp mark or not), ZNW-141, ZNW-149,
+ZNW-155, ZNW-177.
+Quote what you see for the text tickets: 178 ("Manufacture"), 179 ("Health"), 180 (Zenita
+bubble texts; last seen: 3 texts, not "Click on me to know more!"), 181 ("Run Live In 30
+Minutes"), 183 ("Asia Pacific" vs "APAC"), 184 ("Industry" as a sector), 185 ("on-premise"),
+194 (header social icons: YouTube?). Read-only code checks: 192 (visible text below 12px,
+count), 193 (Twitter bird or X logo), 195 (brand logos vs outline icons), 197 (lowercase
+accessible names), 198 (backdrop-filter without -webkit- prefix), 199 (WebKit-only
+scrollbar styles).
 
 PART 5 - Full page sweep for new problems (both viewports). Pages: home, products,
 industries, software development, consultancy, Zenita, partner, support, FAQ, what's new,
@@ -114,3 +132,6 @@ Then commit the report only. Do not stop before the final report is written.
 
 ## Changelog
 - 2026-10-09: first version (after the developers' update on release day)
+- 2026-10-09: merged extra checks (cold start first, measuring rules, text/code ticket list) from a duplicate draft
+
+**Resume line (if it stops at a usage limit):** "Continue the retest: read docs/retest-after-update-2026-10-09.md and the prompt below, and carry on from the first part that is not written yet."
