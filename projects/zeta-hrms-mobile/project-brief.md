@@ -35,8 +35,8 @@
 - **Compliance / privacy:** test accounts and test server only. The QA mailbox receives other people's mail — filter to `zeta.qa.hrms+` test users and never read or quote the rest. `.env` is git-ignored and holds live test credentials.
 
 ## Open questions
-- TODO: what is the expected page size / pagination requirement for the current pagination testing task?
-- TODO: may AI create test data (extra leave or request records) to fill a multi-page list, and up to what limit?
+- Page size = 10 (developers, 2026-10-09).
+- Test data: creating records to fill multi-page lists is ALLOWED (developers, 2026-10-09), on test accounts only. TODO: upper limit and clean-up rule.
 - TODO: will the framework ever be handed to other testers or moved to CI, or does it stay a one-person local tool?
 - TODO: does the old app (`com.zeta.hrms` 1.0.19) come back into scope, and when?
 - TODO: is iOS planned at all, or is Android the permanent scope?
