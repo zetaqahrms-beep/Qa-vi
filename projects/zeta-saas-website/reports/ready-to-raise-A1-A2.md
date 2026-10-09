@@ -192,3 +192,37 @@ scrolls. Scrolling inside the list shows "Bahrain", and the group headings scrol
 
 EXPECTED RESULT
 All 15 countries are visible when the chooser opens, or the list shows that it can be scrolled.
+
+---
+# Country pages content check 2026-10-09 (all 15 pages checked)
+
+## K1: Chips cut off on the Qatar and Bahrain country pages
+STEPS: Header country chooser -> Qatar -> Done; read the four chips at the top left. Repeat for Bahrain. (1291 x 775)
+ACTUAL: Qatar: currency chip shows "AR" (for "QAR") and the label "TATUTORY" (for "STATUTORY").
+Bahrain: currency chip shows "3HD" (for "BHD") and the label "ANGUAGES" (for "LANGUAGES"); the "E" of "EN · AR" is partly cut.
+The chips on the other 13 country pages render in full.
+EXPECTED: The chip text is shown in full on every country page.
+
+## K2: Qatar page spells "Labour Law" two ways
+STEPS: Country chooser -> Qatar -> Done; read the hero pill and the compliance tile under "Statutory-ready for Qatar".
+ACTUAL: The pill and the tile title read "Qatar Labor Law". The same tile's body reads "Leave, gratuity and contracts per Qatar Labour Law.", the hero line reads "...and Qatar Labour Law." and the card reads "Labour Law aligned".
+EXPECTED: The page spells the law's name the same way everywhere.
+
+## K3: Kenya page names the health scheme as "SHIF" and "NHIF"
+STEPS: Country chooser -> Kenya -> Done; read the heading, the chips under the buttons and the compliance tile.
+ACTUAL: Heading: "Kenya payroll & ERP — KRA PAYE, NSSF and SHIF ready." Chip and tile: "NSSF & NHIF".
+The heading names three schemes; the STATUTORY chip reads "2 ready".
+EXPECTED: The heading, chip and tile name the same scheme(s), and the count matches.
+
+## K4: UK page drops "the" before "UK"
+STEPS: Country chooser -> UK -> Done; read the section labels and headings down the page.
+ACTUAL: "WHY ZETA IN UK", "Built for how UK works", "Statutory-ready for UK", "Talk to us in UK", "Ready to run UK on Zeta?"
+EXPECTED: The wording reads grammatically for the UK, as it does for other countries (e.g. "Built for how Kenya works").
+
+## Business confirmation list (do not raise yet)
+- Possibly outdated scheme names: Kenya "NHIF", Oman "PASI", Sri Lanka "PAYE", Mauritius "NPF / NSF".
+- Saudi card "GOSI + WPS" and Malaysia card "SOCSO & EIS": WPS / EIS are not in the statutory lists.
+- "LOCAL SUPPORT: Yes" on 11 countries with no office pin (Qatar, Kuwait, Oman, Bahrain, Sri Lanka, Malaysia, Mauritius, Kenya, Uganda, Egypt, UK).
+- UK hero: "From our London office..." - not in the office pins (UAE, Saudi Arabia, India) or the home "Offices UAE · India · Singapore".
+- Egypt names no tax authority or scheme (others do).
+Dropped: sentence case on cards vs Title Case on tiles (Egypt, UK) - consistent design pattern; "tap any product".
