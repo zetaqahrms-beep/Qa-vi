@@ -315,7 +315,7 @@ On the UK page four more headings are written without "the" before "UK": "WHY ZE
 "Built for how UK works", "Statutory-ready for UK", "Talk to us in UK".
 
 STEP 4 - Screenshots (one per visual bug). Use the first file that exists:
-N1: test-results/ or docs/retest-2026-10-09/A2-construction-clip-1291.png
+N1: docs/retest-2026-10-09/A2-construction-clip-1291.png
 N2: docs/retest-2026-10-09/D1-home-click-opens-zenita.jpg
 N3: test-results/post-e1-arrival.png or docs/retest-2026-10-09/E1-solution-finder-overlap-1291.png
 N4: test-results/post-chooser-open.png or docs/retest-2026-10-09/F4-middle-east-ends-at-oman.png
