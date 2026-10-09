@@ -9,6 +9,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 -->
 
 ## Pending for Monday 2026-10-12
+- Country content check 2026-10-09 (Groups 1-2 done, Group 3 Kenya/Uganda/Egypt/UK NOT checked - input failed; country left on Singapore, reset by hand). RAISE: chips clipped on Qatar ("AR","TATUTORY") AND Bahrain ("3HD","ANGUAGES") - one ticket; Qatar "Labor Law" vs "Labour Law" in same tile; Kenya SHIF vs NHIF. BUSINESS CONFIRMATION list: Saudi card "GOSI + WPS" vs statutory list (no WPS); Malaysia card "SOCSO & EIS" vs list (no EIS); possibly outdated names Oman PASI, Sri Lanka PAYE, Mauritius NPF/NSF, Kenya NHIF; "Local support: Yes" on 7 countries with no office. DROP: "tap" wording (decided earlier). Lesson: counters need ~25s to settle, not 10s.
 - Extra coverage run 2026-10-08 (13 possible). !! F2 India figures likely FALSE: settled India page shows 20+/2000+ like home (656+/7+ was count-up mid-animation) -> recheck after waiting 10s before raising F2.
   RAISE (after manual check): Kenya heading "SHIF" vs chips "NHIF"; Qatar ribbon chips clipped "AR"/"TATUTORY" (check other Gulf pages); Partner sign-in two eye icons in password (check Edge vs Chrome); Zenita names product lines "Enterprise Solutions"/"SaaS" vs Products page "Enterprise"/"Business Suite" (Low).
   COMMENT (Reopened): ZNW-116 add Zenita office answer; ZNW-156 add Q3 pricing->product, Q5 "talk to sales"->Sales & Distribution.
