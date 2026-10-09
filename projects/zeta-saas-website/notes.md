@@ -10,6 +10,7 @@ Claude reads this at the start of a chat to pick up where we left off.
 
 ## Pending for Monday 2026-10-12
 - 9 Oct afternoon: developers pushed a NEW UPDATE. Unattended full retest prompt: prompts/retest-after-update-unattended.md (Sonnet High, fresh session, Auto permissions; Jira read-only; report docs/retest-after-update-2026-10-09.md). Supersedes the K1 extension prompt. Open questions for tester still: F3 meaning, headline bug (a/b/c).
+- Extension could not reach Jira -> prompts/claude-code-raise-in-jira.md (fresh Claude Code session, Sonnet High; dup search -> STOP -> batch approval; screenshots A2 D1 E1 F3 F4, K1 by hand; status doc).
 - Final Jira texts + extension raise prompt: prompts/extension-raise-in-jira.md (dup search first, one item per approval, screenshots by hand for A2 D1 E1 F3 F4 K1 only; T1/N1 wait for lead; 177/141/149/155 later in Claude Code).
 - Screenshots go into Jira as attachments (cropped; per-ticket file list in the approval list; tester drag-drops if the Jira tool cannot attach).
 - Extension gap checks 15:49-16:05 IST: ZNW-180 REPRODUCES (Zenita section bubble), K1 Qatar 4 + Bahrain unreadable letters (13 others clean), K4 5th string sr-only (use 4), ZNW-165 not reproduced (2nd). Jira tab not in panel group -> parts 2-4 blocked -> Claude Code does duplicate search + Fixed retest. Possible P1: PageDown stops at scroll 1346 on home (manual check). Browser outage 14:09-15:46 IST.
