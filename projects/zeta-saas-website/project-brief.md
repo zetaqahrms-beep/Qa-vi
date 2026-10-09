@@ -36,7 +36,7 @@
 - **Formats needed:** Markdown for prompts and manual-check documents. Plain text for Jira: `STEPS TO REPRODUCE` / `ACTUAL RESULT` / `EXPECTED RESULT`, with no notes sections.
 
 ## Rules & constraints
-- **Must always:** Verify a finding on the live site before raising it. Search Jira for a duplicate first. Guard every raised bug with an automated test. State where the mouse pointer was for any layout measurement.
+- **Must always:** Verify a finding on the live site before raising it. Search Jira for a duplicate first — a FRESH search right before raising (the team lead also tests the site with Claude AI and raises tickets, e.g. ZNW-178..200 on 8-9 Oct). Guard every raised bug with an automated test. State where the mouse pointer was for any layout measurement.
 - **Forms (updated 2026-10-07):** Submitting forms with clearly marked test data is allowed — the receiving teams (sales, general, help desk, partner) know test emails will arrive and use them to confirm routing. Mark every submission "QA TEST – please ignore", submit each enquiry type once per test run, and record the submit time so emails can be matched.
 - **Must never:** Sign in anywhere, or type a password. No load testing, scanners, injection payloads or rapid repeated requests — security and performance testing is passive only.
 - **Must never:** Report a missing footer. It is absent by design on every page except home, support, partner and contact.
